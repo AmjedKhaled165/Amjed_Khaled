@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amjed Khaled</title>
+    <link rel="icon" href="img/LOGO2.png">
+    <!-- File CSS -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <style>
+        /* Add these styles for the Read More functionality */
+        .services .box {
+            min-height: 320px; /* Minimum height for consistent layout */
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .services .box p {
+            flex-grow: 1;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .services .box .btn {
+            margin-top: auto;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        /* Optional: Animation for smooth text expansion */
+        .services .box p.expanded {
+            max-height: 500px; /* Adjust based on your needs */
+        }
+     </style>
+</head>
+<body>
+    <div class="bg-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="img/LOGO22.png" alt=""></a>
+            <div class="links" id="links">
+                <span class="close_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <a class="active" href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=61572320681173" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/Amjed_Khaled_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/amjed_khaled_ahmed" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://github.com/AmjedKhaled165" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="http://linkedin.com/in/amjedkhaled" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <span class="icon_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <div class="div_Text">
+                <h4>Hello, I'm</h4>
+                <h1>
+                    <span style="font-size: 55px; color: #00bfff; font-weight: bold;">Amjed</span>
+                    <span style="font-size: 55px; color: #00bfff; font-weight: bold;">Khaled</span>
+                </h1>
+                <h1>
+                    <span style="font-size: 45px; color: #00ff00; font-weight: normal;">AI Developer</span>
+                </h1>
+                <p>
+                    AI Specialist with hands-on experience in computer vision, data analysis, and smart control systems.
+                    Skilled in YOLO-based object detection, video streaming with Raspberry Pi, and robotics (drones and underwater vehicles).
+                    Proficient in Python, C++, and Java, with creative expertise in Adobe tools and Microsoft Office.
+                </p>
+                <div class="btns">
+                    <a href="#contact" class="btn">hire me</a>
+                    <a href="img/Amjed Khaled Professional CV.pdf" download class="btn_no_bg">Download Resume</a>
+                </div>
+            </div>
+            <div class="div_img">
+                <!-- صورة الشخص -->
+                <img class="person" src="img/craiyon_193004_image.png" alt="">
+                <!-- الشكل SVG بدل صورة الخلفية -->
+                <svg class="bg_svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#00C3FF" d="M41.4,23.7C28.6,46,-24,45.1,-37.5,22.4C-51,-0.4,-25.5,-44.9,0.8,-44.5C27.1,-44,54.2,1.4,41.4,23.7Z" transform="translate(100 100)" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="div_text">
+                <h5>about me</h5>
+                <h2><span>I'm an AI Specialist & Computer Vision Developer</span></h2>
+                <p> build intelligent systems that solve real-world problems through cameras, sensors, and automation.
+                    From drone navigation to inventory monitoring in supermarkets, I combine machine learning with smart engineering to make daily operations smarter and faster.
+                    I also create tools that connect devices like Raspberry Pi with remote systems, bringing AI closer to the edge.</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Python, C++, Java Development</li>
+                    <li><i class="fa-solid fa-check"></i> Embedded AI (Raspberry Pi, IoT Integration) </li>
+                    <li><i class="fa-solid fa-check"></i> Computer Vision (YOLO, Object Detection) </li>
+                    <li><i class="fa-solid fa-check"></i> Robotics & Autonomous Systems (Drones & Underwater Vehicles) </li>
+                    <li><i class="fa-solid fa-check"></i> Adobe Creative Tools & Technical Documentation </li>
+                </ul>
+                <a href="img/Amjed Khaled Professional CV.pdf" download class="btn">Dwonload CV</a>
+            </div>
+            <div class="div_img">
+                <img src="img/photo_2025-03-14_22-32-10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="top_section">
+                <h2>Our <span>Services</span></h2>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>AI Development</h3>
+                    <p>In the field of AI development, my work focuses on creating advanced systems that use artificial intelligence to solve complex problems.</p>
+                        <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Computer Vision</h3>
+                    <p>Computer vision is one of my primary areas of focus, where I use cutting-edge technologies to enable machines to interpret and understand visual data. For example, I work with object detection algorithms like YOLO (You Only Look Once) to analyze video feeds in real-time.</p>
+                        <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Data Analysis & Processing</h3>
+                    <p>Data is at the core of most modern businesses, and my role in data analysis is to help turn that data into valuable insights.</p>
+                        <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="top_section">
+                <h2>Explore my Popular <span>Projects</span></h2>
+            </div>
+            <div class="project_box">
+                <video width="50%" height="auto" controls>
+                    <source src="img/234874398-75248e8c-6965-4c91-9176-622509f0ad86.mp4" type="video/mp4">
+                    <source src="img/234874398-75248e8c-6965-4c91-9176-622509f0ad86.mov" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text">
+                    <h4><span>Computer Vision</span></h4>
+                    <h3><a href="#">Detection Tracking Master</a></h3>
+                    <p>Detection & Tracking Master is an interactive web application that leverages the YOLOv8 model to perform object detection and tracking in images and videos. Built with Streamlit, it allows users to upload files or use YouTube links and view results instantly in an intuitive visual interface.</p>
+                    <a href="https://github.com/AmjedKhaled165/detection_tracking_master" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>                </div>
+            </div>
+            <div class="project_box project_box_2">
+                <img src="C:\Users\KoKo\Downloads\portfolio-green2\Amjed portfolio\img\68747470733a2f2f696d672e677265706d65642e636f6d2f75706c6f6164732f353637382f706e65756d6f6e69612d6378722d636f6d70617269736f6e2d6c756e672d636c696e6963616c2d6f726967696e616c2e676966.gif" alt="Project 2" width="100%" height="auto">
+                <div class="text">
+                    <h4><span>ML & DL Project</span></h4>
+                    <h3><a href="#">Lung Classifier</a></h3>
+                    <p>Lung Diseases Classifier is a deep learning project designed to detect and classify various lung diseases from chest X-ray images using the NIH ChestX-ray14 dataset. It employs advanced models like Convolutional Neural Networks (CNNs) and Capsule Networks (CapsNets) to enhance diagnostic accuracy.
+                        The project includes comprehensive data preprocessing, exploratory analysis, and model training on both sample and full datasets. It supports multi-label classification across 14 disease categories, including pneumonia, fibrosis, and emphysema. Implemented in Jupyter Notebooks with Keras, it offers a practical approach to medical image analysis.</p>
+                    <a href="https://github.com/AmjedKhaled165/Lung-Classifier" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+            <div class="project_box">
+                <img src="img/image1.jpg" alt="Project 2" width="100%" height="auto">
+
+                <div class="text">
+                    <h4><span>Data Analysis</span></h4>
+                    <h3><a href="#">Acoustic DA</a></h3>
+                    <p>Acoustic Data Analysis is an interactive application designed for analyzing and visualizing acoustic emission (AE) signals. Using PyQt5 for its graphical interface, the tool allows users to explore time, frequency, and spatial data through various visualizations such as heatmaps, time-domain plots, and frequency distributions. It supports filtering data based on different criteria and provides an intuitive user experience for detailed acoustic data analysis.</p>
+                    <a href="https://github.com/AmjedKhaled165/acoustic-data-analysis" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+            <div class="project_box project_box_2">
+                <img src="img\389292079-e2111e6a-a725-4a33-beb4-35ea83ffab29.png" alt="Project 2" width="100%" height="auto">
+
+                <div class="text">
+                    <h4><span>AI & Embedded system</span></h4>
+                    <h3><a href="#">Oryx</a></h3>
+                    <p>Oryx J022201 is an AI-driven inventory management system that uses YOLOv10 for real-time shelf gap detection in retail stores. The system is powered by a Raspberry Pi, which processes data in real time and connects to surveillance cameras. It also integrates a fully autonomous robot that navigates the shelves, identifies gaps, and assists with restocking, enhancing store operations and product placement.</p>
+                    <a href="https://github.com/AmjedKhaled165/J022201" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="top_section">
+            <h2>Contact   <span>Me</span></h2>
+        </div>
+        <div class="container">
+            <div class="soial_contact">
+                <h2>Follow Me</h2>
+                <div class="links">
+                    <a href="mailto:amjdkhald918@mail.com"><i class="fa-solid fa-envelope"></i>amjdkhald918@gmail.com</a>
+                    <a href="tel:+201550613852"><i class="fa-solid fa-phone"></i> 01550613852</a>
+                    <a href="https://www.facebook.com/profile.php?id=61572320681173" target="_blank"><i class="fa-brands fa-facebook-f"></i> FaceBook</a>
+                    <a href="https://x.com/Amjed_Khaled_" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                    <a href="https://www.instagram.com/amjed_khaled_ahmed" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="http://github.com/AmjedKhaled165" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                    <a href="http://linkedin.com/in/amjedkhaled" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                </div>
+            </div>
+
+            <!-- نموذج الاتصال المتصل بخدمة Formspree -->
+            <form action="https://formspree.io/f/xzzrgrlq" method="POST">
+                <div class="inpts_form">
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" rows="10" placeholder="Your Message Here ..." required></textarea>
+                </div>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Service box read more functionality
+            const serviceBoxes = document.querySelectorAll('.services .box');
+            serviceBoxes.forEach(box => {
+                const readMoreBtn = box.querySelector('.btn');
+                const paragraph = box.querySelector('p');
+                const shortText = paragraph.textContent;
+                let fullText = "";
+                if (box.querySelector('h3').textContent === "AI Development") {
+                    fullText = shortText + "This includes building custom AI solutions for tasks like automation, predictive analytics, and optimization. Whether it's streamlining operations, improving customer experiences, or creating smart technologies, my expertise is in making AI practical and effective for real-world use. I work on developing applications that leverage machine learning and AI to solve challenges across different industries.";
+                } else if (box.querySelector('h3').textContent === "Computer Vision") {
+                    fullText = shortText + "This is widely applied in surveillance, retail inventory management, and any field where video analytics are essential. My goal is to design and develop systems that can recognize objects, track movements, and generate insights that help businesses and organizations make informed decisions based on visual information. This includes real-time object detection and automated video analysis.";
+                } else if (box.querySelector('h3').textContent === "Data Analysis & Processing") {
+                    fullText = shortText + "I work with large datasets to find patterns, trends, and correlations that can inform strategic decisions. Using machine learning models, I process and analyze raw data to provide actionable recommendations. This is particularly useful for industries looking to improve efficiency, reduce costs, or optimize workflows. My data processing services enable organizations to utilize their data more effectively, leading to smarter decision-making and more optimized business strategies.";
+                }
+                let isExpanded = false;
+                readMoreBtn.addEventListener('click', function(e) {
+                    e.preventDefault(); 
+                    if (!isExpanded) {
+                        paragraph.textContent = fullText;
+                        paragraph.classList.add('expanded');
+                        readMoreBtn.textContent = "Show less";
+                        isExpanded = true;
+                    } else {
+                        // Collapse text
+                        paragraph.textContent = shortText;
+                        paragraph.classList.remove('expanded');
+                        readMoreBtn.textContent = "Read More";
+                        isExpanded = false;
+                    }
+                });
+            });
+
+            // Make header sticky on scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('header nav .links a, .hero .btns .btn').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Only apply to links with hash
+                    if (this.getAttribute('href').startsWith('#')) {
+                        const targetId = this.getAttribute('href');
+                        // If it's just "#" (home), scroll to top
+                        if (targetId === "#") {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                            return;
+                        }
+                        // For other sections
+                        const targetSection = document.querySelector(targetId);
+                        if (targetSection) {
+                            e.preventDefault();
+                            const offsetTop = targetSection.offsetTop - 80; // Account for header height
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                            // Close mobile menu if open
+                            const links = document.getElementById('links');
+                            if (links.classList.contains('open')) {
+                                links.classList.remove('open');
+                            }
+                        }
+                    }
+                });
+            });
+        });
+
+        // Menu function
+        function Open_colose_Menu() {
+            const links = document.getElementById('links');
+            links.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
